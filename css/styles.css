@@ -46,9 +46,15 @@ body {
 	display: flex;
 }
 
+.flex-layout2 {
+	display: flex;
+	justify-content: space-between;
+}
 
 .side-1 {
 	flex: 1;
+	box-sizing: border-box;
+	flex-basis: 5%;
 }
 
 .side-3 {
@@ -62,6 +68,8 @@ body {
 #profile-img {
 	border-radius: 50%;
 	box-shadow: 0 0 0 2px #FFD600;
+	width: 150px;
+	height: 150px;
 }
 
 #img-flex {
@@ -122,10 +130,47 @@ hr {
 
 .img-space {
 	margin-right: 20px;
+	width: 30px;
+	height: 20px;
 }
 
-.hobbies-img{
+.hobbies-img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media screen and (max-width: 420px) {
+
+	html {
+		font-size: 90%;
+	}
+
+	.second {
+		padding: 0 10px 0 10px;
+	}
+
+	#profile-img {
+		border-radius: 50%;
+		box-shadow: 0 0 0 2px #FFD600;
+		max-width: 100%;
+		display: block;
+	}
+
+	.img-space {
+		margin-right: 20px;
+		max-width: 100%;
+		display: block;
+	}
+
+	.side-4 {
+		margin-left: 5px;
+		margin-right: auto;
+	}
+
+	.flex-layout2 {
+		max-width: 100%;
+		margin: 10px auto 0 auto;
+	}
+
 }
