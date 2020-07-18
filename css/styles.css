@@ -75,12 +75,15 @@ body {
 	padding-top: 20px;
 }
 
-hr {
-	width: 100%;
+.line {
 	color: #FFCA28;
 	border-width:0;
 	background-color: #FFCA28;
 	height: 2px;
+}
+
+.line-details {
+	width: 100%;
 	margin-left: 0;
 	padding-top: 0;
 }
@@ -108,12 +111,8 @@ hr {
 	font-weight: 200;
 }
 
-#job-line {
+.job-line {
 	width: 7%;
-	color: #FFCA28;
-	border-width:0;
-	background-color: #FFCA28;
-	height: 2px;
 	text-align: left;
 	margin-left: 0;
 }
