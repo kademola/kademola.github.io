@@ -82,7 +82,7 @@ body {
 	height: 2px;
 }
 
-.line-details {
+#line-details {
 	width: 100%;
 	margin-left: 0;
 	padding-top: 0;
@@ -111,7 +111,7 @@ body {
 	font-weight: 200;
 }
 
-.job-line {
+#job-line {
 	width: 7%;
 	text-align: left;
 	margin-left: 0;
