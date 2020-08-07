@@ -81,9 +81,6 @@ body {
 	border-width:0;
 	background-color: #FFCA28;
 	height: 2px;
-}
-
-#line-details {
 	width: 100%;
 	margin-left: 0;
 	padding-top: 0;
@@ -112,10 +109,14 @@ body {
 	font-weight: 200;
 }
 
-#job-line {
+.short-line {
 	width: 7%;
 	text-align: left;
 	margin-left: 0;
+	color: #FFCA28;
+	border-width:0;
+	background-color: #FFCA28;
+	height: 2px;
 }
 
 #last-name-id {
@@ -146,9 +147,30 @@ p {
 	display: flex;
 	justify-content: space-between;
 	}
+
+	#mobile-about-me {
+		display: none;
+	}
+
+	#mobile-contact {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 420px) {
+
+	.container {
+		display: block;
+		margin: 5px;
+	}
+
+	.first {
+		display: none;
+	}
+
+	.second {
+		display: block;
+	}
 
 	h2 h3 p {
 		font-size: 8vw;
@@ -181,8 +203,29 @@ p {
 		flex-basis: 60%;
 	}
 
-	#job-line {
-	width: 20%;
-}
+	.text-line {
+		display: block;
+  		text-overflow: ellipsis;
+  		word-wrap: break-word;
+  		overflow: hidden;
+  		max-height: 3.6em;
+  		line-height: 1.8em;
+	}
 
+	#mobile-about-me {
+		text-align: justify;
+		justify-content: center;
+	}
+
+	#mobile-contact {
+		margin-bottom: -60px;
+	}
+
+	h4 {
+		margin-bottom: -5px;
+	}
+
+	.short-line {
+	width: 20%;
+	}
 }
