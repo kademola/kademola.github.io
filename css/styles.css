@@ -8,14 +8,14 @@ body {
 	display: flex;
 }
 
-.first {
+aside {
 	flex: 1;
 	background-color: #FFCA28;
 	padding: 0 20px 0 20px;
 	text-align: justify;
 }
 
-.second {
+main {
 	flex: 3;
 	background-color: #FFFFFF;
 	padding: 0 20px 0 40px;
@@ -77,16 +77,23 @@ body {
 }
 
 .line {
-	color: #FFCA28;
 	border-width:0;
 	background-color: #FFCA28;
 	height: 2px;
-	width: 100%;
 	margin-left: 0;
+}
+
+.long-line {
+	width: 100%;
 	padding-top: 0;
 }
 
-.line_height {
+.short-line {
+	width: 7%;
+	text-align: left;
+}
+
+#name-id {
 	line-height: 0.2;
 	display: flex;
 	font-weight: 400;
@@ -107,16 +114,6 @@ body {
 	margin-bottom: -18px;
 	font-size: 0.92em;
 	font-weight: 200;
-}
-
-.short-line {
-	width: 7%;
-	text-align: left;
-	margin-left: 0;
-	color: #FFCA28;
-	border-width:0;
-	background-color: #FFCA28;
-	height: 2px;
 }
 
 #last-name-id {
@@ -155,29 +152,27 @@ p {
 	#mobile-contact {
 		display: none;
 	}
+
 }
 
 @media screen and (max-width: 420px) {
 
 	.container {
 		display: block;
-		margin: 5px;
+		margin: 2px;
+		background: #F8F8FF;
 	}
 
-	.first {
+	aside {
 		display: none;
 	}
 
-	.second {
+	main {
 		display: block;
 	}
 
 	h2 h3 p {
 		font-size: 8vw;
-	}
-
-	.second {
-		padding: 0 10px 0 10px;
 	}
 
 	#profile-img {
